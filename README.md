@@ -2,9 +2,9 @@
 
 ### Express JS Backend using mongoose, jsonwebtoken, bcryptjs, config
 
-###  [Depoyed with heroku](http://dummy.surge.sh/#/)
+###  [Depoyed with heroku](https://stark-scrubland-54787.herokuapp.com/api/apps/)
 
-### frontend [...](http://dummy.surge.sh/#/) 
+### TODO: frontend [frontend](http://dummy.surge.sh/#/) 
 
 
 ## Build Setup
