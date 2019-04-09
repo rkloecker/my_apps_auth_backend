@@ -3,19 +3,17 @@ const app = express();
 const mongoose = require("mongoose");
 const config = require("config");
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 
-// for frontend
-// app.use(express.static(__dirname + "/client"));
 // Bodyparser Middleware
 app.use(express.json());
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,PATCH,DELETE");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept, x-auth-token, X-Access-Token"
   );
-  res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
   next();
 });
 
@@ -28,21 +26,9 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
-  }) // Adding new mongo url parser
+  }) // Adding new mongo url parser, suppress deprecated warnings
   .then(() => console.log("MongoDB Connected..."))
   .catch(err => console.log(err));
-
-// mongoose.set("useFindAndModify", false);
-
-// const AppModel = require("./models/appModel");
-
-// Connect to Mongoose
-// const mongoURI = process.env.MLABKEY;
-// const mongoURI = process.env.MONGO_URI;
-// // const mongoURI = process.env.MONGO_LOCAL;
-
-// mongoose.connect(mongoURI, { useNewUrlParser: true });
-// var db = mongoose.connection;
 
 // Use Routes
 app.use("/api/apps", require("./routes/api/apps"));
