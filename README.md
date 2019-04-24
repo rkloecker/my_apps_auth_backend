@@ -4,7 +4,7 @@
 
 ###  [Deployed with heroku](https://sheltered-eyrie-53167.herokuapp.com/api/apps)
 
-### TODO: frontend [frontend](http://dummy.surge.sh/#/) 
+### frontend [frontend](https://rkloecker.github.io/redux-myapps-auth/) 
 
 
 ## Build Setup
