@@ -1,10 +1,10 @@
 # my_apps_auth_backend
 
-### Express JS Backend using mongoose, jsonwebtoken, bcryptjs, config
+## Express JS Backend using mongoose, jsonwebtoken, bcryptjs, config
 
-###  [Deployed with heroku](https://sheltered-eyrie-53167.herokuapp.com/api/apps)
+## [Deployed with heroku](https://sheltered-eyrie-53167.herokuapp.com/api/apps)
 
-### frontend [frontend](https://rkloecker.github.io/redux-myapps-auth/) 
+##  [React frontend](https://rkloecker.github.io/redux-myapps-auth/) 
 
 
 ## Build Setup
